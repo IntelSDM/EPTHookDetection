@@ -1,4 +1,4 @@
-# WHPEmulationKiller
+# EPT Hook Detection Pass
 Built for LLVM 19.1 - Windows x64 <br> <br>
 
 We use 3 different methods to break EPT hooks placed in our code. The issue with most EPT hook detections is they need JIT code of sorts, which makes them useless.<br>
