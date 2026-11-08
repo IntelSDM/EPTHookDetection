@@ -26,7 +26,7 @@
 
 using namespace llvm;
 
-llvm::cl::opt<bool> EPTDetectEnable("obfeptdetect", llvm::cl::init(false), llvm::cl::desc("Master Toggle"));
+llvm::cl::opt<bool> EPTDetectEnable("obfeptdetect", llvm::cl::init(true), llvm::cl::desc("Master Toggle"));
 
 static std::mt19937 Rng((std::random_device{}() ^ (unsigned)std::chrono::high_resolution_clock::now().time_since_epoch().count()));
 
