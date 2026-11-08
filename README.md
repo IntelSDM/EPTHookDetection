@@ -50,7 +50,7 @@ __attribute__((annotate("HyperDOS-n")))
 ```c
 __attribute__((annotate("HyperDOS-10")))
 ```
-* HyperDOS-10 is 2 seconds on a legitimate machine, 50 minutes on a HyperDBG EPT hook. 
+* HyperDOS-10 is 500 miliseconds on a legitimate machine, 20 hours on a HyperDBG EPT hook. 
 
 
 
