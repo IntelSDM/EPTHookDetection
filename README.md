@@ -3,7 +3,7 @@ Built for LLVM 19.1 - Windows x64 <br> <br>
 
 We use 3 different methods to break EPT hooks placed in our code. The issue with most EPT hook detections is they need JIT code of sorts, which makes them useless.<br>
 This is one of the VERY VERY few ways you can actually use usermode EPT hook detections properly, as your natural physical page is what gets hooked. This code will all be next to your actual code, so it gets violated with your code. <br> 
-This pass effectively detect HyperDBG and DBMS EPT hooks. I haven't tested with any others. <br>
+This pass effectively detect [HyperDBG](https://github.com/HyperDbg/HyperDbg) and [DBVM](https://github.com/cheat-engine/cheat-engine/tree/master/dbvm) EPT hooks. I haven't tested with any others. <br>
 
 ## Method 1
 [ERMSB](https://github.com/everdox/ermsb-meme) We use a custom version of Everdox's REP MOVSB/STOSB detection, with a twist, we detect the shadow DR miss. The original method has been known and used in the wild by certain anti cheats for a while. <br>
